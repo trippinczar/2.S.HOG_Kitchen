@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     // Start Game Button
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1"); // Loads level 1
+        SceneManager.LoadScene("Explain"); // Loads level 1
     }
 
     // Open Credits Panel

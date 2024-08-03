@@ -73,4 +73,9 @@ public class Control : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+    
+    public void Continue()
+    {
+        SceneManager.LoadScene("Level1");
+    }
 }
