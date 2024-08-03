@@ -15,12 +15,17 @@ public class Control : MonoBehaviour
     public GameObject loseScreen;
 
     private int objectsFound = 0;
+    private Timer timerScript;
     
     // Start is called before the first frame update
     void Start()
     {
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
+        Time.timeScale = 1f;
+
+        timerScript = FindObjectOfType<Timer>(); // Link to Timer script
+        timerScript.ResetTimer(); // Resets timer so upon reloading the scene the timer works
     }
 
     // Update is called once per frame

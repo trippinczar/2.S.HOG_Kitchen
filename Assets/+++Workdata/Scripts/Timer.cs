@@ -6,13 +6,15 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] private float remainingTime;
+    [SerializeField] private float initialTime;
+    private float remainingTime;
     private Control controlScript;
     
     // Start is called before the first frame update
     void Start()
     {
         controlScript = FindObjectOfType<Control>();
+        ResetTimer();
     }
 
     // Update is called once per frame
@@ -33,9 +35,13 @@ public class Timer : MonoBehaviour
             controlScript.LoseGame();
         }
         
-        remainingTime -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void ResetTimer()
+    {
+        remainingTime = initialTime; // Initialize remainingTime with initialTime
     }
 }
