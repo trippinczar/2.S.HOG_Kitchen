@@ -17,33 +17,33 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //set to visible
-        mainMenuPanel.SetActive(true);
-        //set to invisible
-        creditsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true); // Sets panel visible
+        creditsPanel.SetActive(false); // Sets panel invisible
     }
 
     // Start Game Button
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Level1"); // Loads level 1
     }
 
+    // Open Credits Panel
     public void OpenCreditsPanel()
     {
-        creditsPanel.SetActive(true);
+        creditsPanel.SetActive(true); // Sets panel visible
     }
 
+    // Close Credits Panel
     public void CloseCreditsPanel()
     {
-        creditsPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
+        creditsPanel.SetActive(false); // Sets panel invisible
+        mainMenuPanel.SetActive(true); // Sets panel visible
     }
     
     // Quit Game Button
     public void QuitGame()
     {
         Application.Quit(); // Quit game
-        Debug.Log("Quited Game");
+        Debug.Log("Quited Game"); // Debug log to check if code is executing
     }
 }

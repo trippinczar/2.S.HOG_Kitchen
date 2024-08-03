@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Control : MonoBehaviour
@@ -44,17 +45,27 @@ public class Control : MonoBehaviour
         }
     }
     
-    private void WinGame()
+    public void WinGame()
     {
         winScreen.SetActive(true);
         // Stop the timer and disable further clicks
         Time.timeScale = 0f;
     }
 
-    private void LoseGame()
+    public void LoseGame()
     {
         loseScreen.SetActive(true);
         // Stop the timer and disable further clicks
         Time.timeScale = 0f;
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }

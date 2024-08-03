@@ -7,15 +7,21 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] private float remainingTime;
+    private Control controlScript;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        controlScript = FindObjectOfType<Control>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Countdown();
+    }
+
+    void Countdown()
     {
         if (remainingTime > 0)
         {
@@ -24,7 +30,7 @@ public class Timer : MonoBehaviour
         else if (remainingTime < 0)
         {
             remainingTime = 0;
-            // GameOver();
+            controlScript.LoseGame();
         }
         
         remainingTime -= Time.deltaTime;
