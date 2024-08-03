@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9ded18a0-de4f-4874-be64-cbc27edf0a78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2.S.HOG_Kitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2.S.HOG_Kitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Control.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Control.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Timer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Timer.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +93,7 @@
       <updated>1722615869173</updated>
       <workItem from="1722615871279" duration="73000" />
       <workItem from="1722616155905" duration="1771000" />
-      <workItem from="1722620045861" duration="3118000" />
+      <workItem from="1722620045861" duration="3929000" />
     </task>
     <servers />
   </component>
