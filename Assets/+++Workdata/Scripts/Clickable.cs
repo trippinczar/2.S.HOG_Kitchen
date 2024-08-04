@@ -16,5 +16,6 @@ public class Clickable : MonoBehaviour
     private void OnMouseDown()
     {
         gameController.OnObjectClicked(gameObject);
+        AudioManager.Instance.PlaySFX("Found");
     }
 }

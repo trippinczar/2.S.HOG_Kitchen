@@ -52,6 +52,7 @@ public class Control : MonoBehaviour
     
     public void WinGame()
     {
+        AudioManager.Instance.PlaySFX("Win");
         winScreen.SetActive(true);
         // Stop the timer and disable further clicks
         Time.timeScale = 0f;
@@ -59,6 +60,7 @@ public class Control : MonoBehaviour
 
     public void LoseGame()
     {
+        AudioManager.Instance.PlaySFX("Lose");
         loseScreen.SetActive(true);
         // Stop the timer and disable further clicks
         Time.timeScale = 0f;
@@ -66,16 +68,19 @@ public class Control : MonoBehaviour
 
     public void BackToMenu()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Restart()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene("Level1");
     }
     
     public void Continue()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene("Level1");
     }
 }

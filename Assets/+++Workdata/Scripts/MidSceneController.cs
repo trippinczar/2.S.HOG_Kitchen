@@ -19,6 +19,7 @@ public class MidSceneController : MonoBehaviour
 
     public void Continue()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Debug.Log("button pressed");
         SceneManager.LoadScene("Level1");
     }
