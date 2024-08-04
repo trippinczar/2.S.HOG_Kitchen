@@ -81,6 +81,6 @@ public class Control : MonoBehaviour
     public void Continue()
     {
         AudioManager.Instance.PlaySFX("Click");
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("DemoEnd");
     }
 }
